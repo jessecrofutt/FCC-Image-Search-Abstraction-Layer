@@ -10,8 +10,8 @@ const app = express();
 
 const port =  process.env.PORT || 8888;
 
-// const dataBaseLocation = process.env.MONGOLAB_URI || `mongodb://localhost:27017/links`;
-const url = `mongodb://localhost:27017/links` || process.env.MONGOLAB_URI;
+const dataBaseLocation = process.env.MONGOLAB_URI || `mongodb://localhost:27017/links`;
+// const url = `mongodb://localhost:27017/links` || process.env.MONGOLAB_URI;
 let mongo = require('mongodb').MongoClient;
 
 let favicon = require('serve-favicon');
