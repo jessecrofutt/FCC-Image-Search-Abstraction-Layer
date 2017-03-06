@@ -1,0 +1,67 @@
+@mixin border-radius($radius){
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+$backgroundColor: rgba(50,50,50,0.2);
+$linkColor: rgb(255,200,255);
+$textColor: rgb(200,255,255);
+
+$textColorHover: rgb(200,100,200);
+
+a:link {
+    color: $linkColor;
+}
+
+a:visited {
+    color: $linkColor;
+}
+
+a:hover {
+    color: $textColorHover;
+}
+
+a:active {
+    color: $textColorHover;
+}
+
+body {
+  font-family: 'Comfortaa', cursive;
+  background-color: black;
+  font-size: 16px;
+  font-style: normal;
+}
+h3 {
+    font-family: 'Comfortaa', cursive;
+}
+
+.address {
+    color: rgb(50,50,255);
+    background-color: rgb(10,10,10);
+}
+
+.container {
+  @include border-radius(4px);
+  margin-right: auto;
+  margin-left: auto;
+  background-color: $backgroundColor;
+  color: $textColor;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+.examples {
+  @extend .container;
+  background-color: $backgroundColor;
+}
+
+.instructions {
+  @extend .container;
+}
+
+.title {
+  @extend .container;
+}

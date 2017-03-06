@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FCC-Image-Search-Abstraction-Layer</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+  </head>
+<body>
+  <div class="container">
+    <div class="title">
+        <h1>
+            FCC Image Search Abstraction Layer
+
+        </h1>
+    </div>
+    <div class="examples">
+        <h3>
+            To perfom an image search copy and past the following into the search
+            bar: <span class = 'address'>/api/image_search/query</span> . Replace the word
+            <span class = 'address'>query</span> with whatever
+            you would like to search for.
+                <br>
+                <br>
+            Try these examples:
+                <br>
+                <br>
+            <a href="http://localhost:8888/api/image_search/dogs">
+                http://localhost:8888/api/image_search/dogs
+            </a>
+                <br>
+            <a href="http://localhost:8888/api/image_search/logs">
+                http://localhost:8888/api/image_search/logs
+            </a>
+                <br>
+                <br>
+                Search terms can be followed by <span class = 'address'>?offset=</span>
+                and a number to view additional search results.
+                <br>
+                <br>
+            <a href="http://localhost:8888/api/image_search/frogs?offset=2">
+                http://localhost:8888/api/image_search/frogs?offset=2
+            </a>
+                <br>
+                <br>
+            To view a list of recent searches paste <span class = 'address'>/api/history</span> into
+            address bar.
+                <br>
+                <br>
+            <a href="http://localhost:8888/api/history">
+                http://localhost:8888/api/history
+            </a>
+                <br>
+                <br>
+                <br>
+            <!-- <div id = "display">
+            </div> -->
+        </h3>
+    </div>
+    </div>
+    <div class="output">
+    </div>
+  </div>
+  <script>src='server.js'</script>
+</body>
+</html>
