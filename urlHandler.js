@@ -1,13 +1,13 @@
 "use strict";
+const GoogleImages = require('google-images');
+var cx = process.env.CSE_ID;
+let apiKey = process.env.API_KEY;
+const client = new GoogleImages(cx, apiKey);
 
 // const url = `mongodb://localhost:27017/links`;
 const url = process.env.MONGOLAB_URI;
 let mongo = require('mongodb').MongoClient;
         //google-images library used to access Google custom search engine (CSE)
-const GoogleImages = require('google-images');
-var cx = process.env.CSE_ID;
-let apiKey = process.env.API_KEY;
-const client = new GoogleImages(cx, apiKey);
 
 module.exports = function(data, pagination, callback) {
     let motherObject = {};
