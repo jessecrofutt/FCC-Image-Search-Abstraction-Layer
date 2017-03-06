@@ -1,6 +1,7 @@
 "use strict";
 
-const url = `mongodb://localhost:27017/links`;
+// const url = `mongodb://localhost:27017/links`;
+const url = process.env.MONGOLAB_URI;
 let mongo = require('mongodb').MongoClient;
         //google-images library used to access Google custom search engine (CSE)
 const GoogleImages = require('google-images');

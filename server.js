@@ -9,9 +9,10 @@ const express = require('express');
 const app = express();
 
 const port =  process.env.PORT || 8888;
+// const port =  8888;
 
-const url = process.env.MONGOLAB_URI || `mongodb://localhost:27017/links`;
-// const url = `mongodb://localhost:27017/links` || process.env.MONGOLAB_URI;
+const url = process.env.MONGOLAB_URI;
+// const url = `mongodb://localhost:27017/links`;
 let mongo = require('mongodb').MongoClient;
 
 let favicon = require('serve-favicon');
