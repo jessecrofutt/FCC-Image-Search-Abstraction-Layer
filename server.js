@@ -8,7 +8,7 @@ const urlHandler = require('./urlHandler.js');
 const express = require('express');
 const app = express();
 
-const port =  process.env.PORT || 8888;
+const port =  process.env.PORT;
 // const port =  8888;
 
 const url = process.env.MONGOLAB_URI;
